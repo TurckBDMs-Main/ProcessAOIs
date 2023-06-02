@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="23.00" TargetName="CMVT_QR20_RMS_in_mms" TargetType="AddOnInstructionDefinition" TargetRevision="1.0 " TargetLastEdited="2023-04-20T22:21:56.449Z" ContainsContext="true" Owner="TURCK, TURCK" ExportDate="Thu Apr 20 17:24:50 2023" ExportOptions="References DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="catalogfile">
+<DataTypes Use="Context">
+<DataType Name="Generic_5_Words" Family="NoFamily" Class="User">
+<Members>
+<Member Name="Data" DataType="INT" Dimension="5" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"/>
+</Members>
+</DataType>
+</DataTypes>
+<AddOnInstructionDefinitions Use="Context">
+<AddOnInstructionDefinition Use="Target" Name="CMVT_QR20_RMS_in_mms" Revision="1.0" Vendor="TURCK" ExecutePrescan="false" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2023-04-20T20:52:49.967Z" CreatedBy="NIDLAB01\Turck User" EditedDate="2023-04-20T22:21:56.449Z" EditedBy="NIDLAB01\Turck User"
+ SoftwareRevision="v23.00">
+<Parameters>
+<Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Input - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Output - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="X_Axis" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Y_Axis" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Z_Axis" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Magnitude_Sum_of_Vectors" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Actual_Temperature" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="CMVT_Process_Data_IN" TagType="Base" DataType="Generic_5_Words" Usage="InOut" Required="true" Visible="true" Constant="false"/>
+</Parameters>
+<LocalTags>
+<LocalTag Name="CMVT_PDIN_FIXED" DataType="Generic_5_Words" ExternalAccess="None">
+<DefaultData>00 00 00 00 00 00 00 00 00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="Generic_5_Words">
+<ArrayMember Name="Data" DataType="INT" Dimensions="5" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+<Element Index="[2]" Value="0"/>
+<Element Index="[3]" Value="0"/>
+<Element Index="[4]" Value="0"/>
+</ArrayMember>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="PDI" DataType="SINT" Radix="Decimal" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="SINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</LocalTag>
+</LocalTags>
+<Routines>
+<Routine Name="Logic" Type="ST">
+<STContent>
+<Line Number="0">
+<![CDATA[//Fix signs of process data variables (Temperature is not considered)]]>
+</Line>
+<Line Number="1">
+<![CDATA[]]>
+</Line>
+<Line Number="2">
+<![CDATA[FOR PDI:=1 TO 4 BY 1 DO]]>
+</Line>
+<Line Number="3">
+<![CDATA[]]>
+</Line>
+<Line Number="4">
+<![CDATA[]]>
+</Line>
+<Line Number="5">
+<![CDATA[IF CMVT_Process_Data_IN.Data[PDI] <0]]>
+</Line>
+<Line Number="6">
+<![CDATA[then]]>
+</Line>
+<Line Number="7">
+<![CDATA[CMVT_PDIN_FIXED.Data[PDI]:=65536-abs(CMVT_Process_Data_IN.Data[PDI]);]]>
+</Line>
+<Line Number="8">
+<![CDATA[else]]>
+</Line>
+<Line Number="9">
+<![CDATA[CMVT_PDIN_FIXED.Data[PDI]:=CMVT_Process_Data_IN.Data[PDI];]]>
+</Line>
+<Line Number="10">
+<![CDATA[END_IF;]]>
+</Line>
+<Line Number="11">
+<![CDATA[]]>
+</Line>
+<Line Number="12">
+<![CDATA[END_FOR;]]>
+</Line>
+<Line Number="13">
+<![CDATA[]]>
+</Line>
+<Line Number="14">
+<![CDATA[//Scale Process data and send to output variables]]>
+</Line>
+<Line Number="15">
+<![CDATA[]]>
+</Line>
+<Line Number="16">
+<![CDATA[X_Axis:=CMVT_PDIN_FIXED.Data[4]*.01;]]>
+</Line>
+<Line Number="17">
+<![CDATA[Y_Axis:=CMVT_PDIN_FIXED.Data[3]*.01;]]>
+</Line>
+<Line Number="18">
+<![CDATA[Z_Axis:=CMVT_PDIN_FIXED.Data[2]*.01;]]>
+</Line>
+<Line Number="19">
+<![CDATA[Magnitude_Sum_of_Vectors:= CMVT_PDIN_FIXED.Data[1]*.01;]]>
+</Line>
+<Line Number="20">
+<![CDATA[Actual_Temperature:=CMVT_Process_Data_IN.Data[0]*.1;]]>
+</Line>
+<Line Number="21">
+<![CDATA[]]>
+</Line>
+</STContent>
+</Routine>
+</Routines>
+<Dependencies>
+<Dependency Type="DataType" Name="Generic_5_Words"/>
+</Dependencies>
+</AddOnInstructionDefinition>
+</AddOnInstructionDefinitions>
+</Controller>
+</RSLogix5000Content>

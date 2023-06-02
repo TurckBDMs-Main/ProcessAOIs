@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="23.00" TargetName="TS_xxx_LI2UPN8X_H1141" TargetType="AddOnInstructionDefinition" TargetRevision="1.0 " TargetLastEdited="2021-11-09T22:14:20.789Z" ContainsContext="true" Owner="TURCK, TURCK" ExportDate="Tue Nov 09 17:15:18 2021" ExportOptions="References DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="AOI_TS400">
+<DataTypes Use="Context">
+</DataTypes>
+<AddOnInstructionDefinitions Use="Context">
+<AddOnInstructionDefinition Use="Target" Name="TS_xxx_LI2UPN8X_H1141" Revision="1.0" Vendor="TURCK" ExecutePrescan="false" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2021-11-09T16:07:26.562Z" CreatedBy="NIDLAB01\Turck User" EditedDate="2021-11-09T22:14:20.789Z" EditedBy="NIDLAB01\Turck User"
+ SoftwareRevision="v23.00">
+<RevisionNote>
+<![CDATA[AOI for process data of devices TS400 and TS500]]>
+</RevisionNote>
+<Parameters>
+<Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Input - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Output - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="Switching_State_A1" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Switching_State_A2" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Process_Data_IN" TagType="Base" DataType="INT" Usage="Input" Radix="Decimal" Required="true" Visible="true" ExternalAccess="None">
+<DefaultData>00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="INT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Temperature_Celsius" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Temperature_Farenheit" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Temperature_Kelvin" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Error" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Overflow" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Overflow_Tolerance" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Measuring_Range_OK" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Underflow_Tolerance" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Underflow" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Probe_Not_Connected" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Parametrizing_Mode" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Value_Not_Defined" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="PT100_Ohms" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+</Parameters>
+<LocalTags>
+<LocalTag Name="Process_Data_IN_FIXED" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+<DefaultData>00 00 00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</LocalTag>
+</LocalTags>
+<Routines>
+<Routine Name="Logic" Type="ST">
+<STContent>
+<Line Number="0">
+<![CDATA[Error:=0;]]>
+</Line>
+<Line Number="1">
+<![CDATA[Measuring_Range_OK:=0;]]>
+</Line>
+<Line Number="2">
+<![CDATA[Overflow:=0;]]>
+</Line>
+<Line Number="3">
+<![CDATA[Overflow_Tolerance:=0;]]>
+</Line>
+<Line Number="4">
+<![CDATA[Parametrizing_Mode:=0;]]>
+</Line>
+<Line Number="5">
+<![CDATA[Probe_Not_Connected:=0;]]>
+</Line>
+<Line Number="6">
+<![CDATA[Switching_State_A1:=0;]]>
+</Line>
+<Line Number="7">
+<![CDATA[Switching_State_A2:=0;]]>
+</Line>
+<Line Number="8">
+<![CDATA[Underflow:=0;]]>
+</Line>
+<Line Number="9">
+<![CDATA[Underflow_Tolerance:=0;]]>
+</Line>
+<Line Number="10">
+<![CDATA[Value_Not_Defined:=0;]]>
+</Line>
+<Line Number="11">
+<![CDATA[]]>
+</Line>
+<Line Number="12">
+<![CDATA[//This condition is in order to convert from a signed value to a unsigned value]]>
+</Line>
+<Line Number="13">
+<![CDATA[]]>
+</Line>
+<Line Number="14">
+<![CDATA[]]>
+</Line>
+<Line Number="15">
+<![CDATA[IF Process_Data_IN <0]]>
+</Line>
+<Line Number="16">
+<![CDATA[then]]>
+</Line>
+<Line Number="17">
+<![CDATA[Process_Data_IN_FIXED:=65536-abs(Process_Data_IN);]]>
+</Line>
+<Line Number="18">
+<![CDATA[else]]>
+</Line>
+<Line Number="19">
+<![CDATA[Process_Data_IN_FIXED:=Process_Data_IN;]]>
+</Line>
+<Line Number="20">
+<![CDATA[END_IF;]]>
+</Line>
+<Line Number="21">
+<![CDATA[]]>
+</Line>
+<Line Number="22">
+<![CDATA[]]>
+</Line>
+<Line Number="23">
+<![CDATA[//Create a case based on the IO Link manual D101804]]>
+</Line>
+<Line Number="24">
+<![CDATA[CASE Process_Data_IN_FIXED OF]]>
+</Line>
+<Line Number="25">
+<![CDATA[0: 				Underflow:=1; Error:=1;]]>
+</Line>
+<Line Number="26">
+<![CDATA[2356..5119:		Underflow_Tolerance:=1;]]>
+</Line>
+<Line Number="27">
+<![CDATA[5120..60415:	Measuring_Range_OK:=1;]]>
+</Line>
+<Line Number="28">
+<![CDATA[60416..63179:	Overflow_Tolerance:=1;]]>
+</Line>
+<Line Number="29">
+<![CDATA[65533:			Parametrizing_Mode:=1; Error:=1;]]>
+</Line>
+<Line Number="30">
+<![CDATA[65534:			Probe_Not_Connected:=1; Error:=1;]]>
+</Line>
+<Line Number="31">
+<![CDATA[65535:			Overflow:=1; Error:=1;]]>
+</Line>
+<Line Number="32">
+<![CDATA[ELSE			Value_Not_Defined:=1;]]>
+</Line>
+<Line Number="33">
+<![CDATA[]]>
+</Line>
+<Line Number="34">
+<![CDATA[END_CASE;]]>
+</Line>
+<Line Number="35">
+<![CDATA[ 	]]>
+</Line>
+<Line Number="36">
+<![CDATA[]]>
+</Line>
+<Line Number="37">
+<![CDATA[//Show Temperature in different Scales]]>
+</Line>
+<Line Number="38">
+<![CDATA[]]>
+</Line>
+<Line Number="39">
+<![CDATA[if (Overflow_Tolerance OR Underflow_Tolerance OR Measuring_Range_OK)]]>
+</Line>
+<Line Number="40">
+<![CDATA[THEN]]>
+</Line>
+<Line Number="41">
+<![CDATA[Temperature_Celsius:=0.0099466497875*Process_Data_IN_FIXED-100.9268469;]]>
+</Line>
+<Line Number="42">
+<![CDATA[Temperature_Farenheit:=Temperature_Celsius*1.8+32;]]>
+</Line>
+<Line Number="43">
+<![CDATA[Temperature_Kelvin:=Temperature_Celsius+273.15;]]>
+</Line>
+<Line Number="44">
+<![CDATA[Switching_State_A1:=Process_Data_IN_FIXED.0;]]>
+</Line>
+<Line Number="45">
+<![CDATA[Switching_State_A2:=Process_Data_IN_FIXED.1;]]>
+</Line>
+<Line Number="46">
+<![CDATA[PT100_Ohms:=100*(1+.003851*Temperature_Celsius);]]>
+</Line>
+<Line Number="47">
+<![CDATA[ELSE]]>
+</Line>
+<Line Number="48">
+<![CDATA[]]>
+</Line>
+<Line Number="49">
+<![CDATA[Temperature_Celsius:=0;]]>
+</Line>
+<Line Number="50">
+<![CDATA[Temperature_Farenheit:=0;]]>
+</Line>
+<Line Number="51">
+<![CDATA[Temperature_Kelvin:=0;]]>
+</Line>
+<Line Number="52">
+<![CDATA[Switching_State_A1:=0;]]>
+</Line>
+<Line Number="53">
+<![CDATA[Switching_State_A2:=0;]]>
+</Line>
+<Line Number="54">
+<![CDATA[PT100_Ohms:=0;]]>
+</Line>
+<Line Number="55">
+<![CDATA[]]>
+</Line>
+<Line Number="56">
+<![CDATA[END_IF;]]>
+</Line>
+<Line Number="57">
+<![CDATA[]]>
+</Line>
+<Line Number="58">
+<![CDATA[]]>
+</Line>
+<Line Number="59">
+<![CDATA[]]>
+</Line>
+</STContent>
+</Routine>
+</Routines>
+</AddOnInstructionDefinition>
+</AddOnInstructionDefinitions>
+</Controller>
+</RSLogix5000Content>

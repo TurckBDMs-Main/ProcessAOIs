@@ -1,0 +1,3573 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Turck-TTMx-LIUPN-20140728-IODD1.1.xml</title>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+.llink { font-size:10pt;color:#294D96;font-family:Arial;font-weight:bold; }
+.link { font-size:10pt;color:#294D96;margin-top:40;font-family:Arial;font-weight:bold; }
+a:link { text-decoration:none; color:#800080; }
+a:visited { text-decoration:none; color:#800080; }
+a:hover { text-decoration:underline; color:#800080; }
+h2 { font-size:12pt;color:#294D96;margin-top:5;margin-bottom:5;font-family:Arial; }
+p { font-size:7pt;font-family:Arial;color:#A0A0A0; }
+table { border:2px solid gray;background-color:#E9EDF4;padding:10;margin:0;empty-cells:show;border-collapse:collapse;margin-top:5;margin-bottom:20;font-family:Arial;font-weight:normal;text-align:left; }
+th { border:1px solid gray;font-size:9pt;font-family:Arial;font-weight:bold;color:#FFFFFF;background-color:#294D96; }
+td { border:1px solid gainsboro;font-size:9pt;font-family:Arial;font-weight:normal;color:black; }
+table.doc { border:0px solid gray;background-color:#FFFFFF;padding:10;margin:0;empty-cells:show;border-collapse:collapse;margin-top:5;margin-bottom:5;font-family:Arial;font-weight:normal; }
+td.doc { border:1px solid gainsboro;font-size:9pt;font-family:Arial;font-weight:normal;color:black; }
+</style></head><body><a name="Top"></a>
+<table class="doc" width="750">
+<tr>
+<td class="doc" width="150">Version: V01.2000</td><td class="doc">Release Date: 2014-07-28</td></tr></table><br>
+<div class="llink"><a href="#ProcessData">[Process Data]</a></div>
+<div class="llink"><a href="#StdVariables">[Standard Variables]</a></div>
+<div class="llink"><a href="#Variables">[Variables]</a></div>
+<div class="llink"><a href="#ErrorTypes">[ErrorTypes]</a></div>
+<div class="llink"><a href="#Events">[Events]</a></div>
+<div class="llink"><a href="#Menus">[Menus]</a></div>
+<br><table width="750">
+<tr><th colspan="3" style="font-size:14pt;">TTM</th></tr>
+<tr><td width="150">Vendor ID</td>
+<td>317 (0x013d)</td>
+<td rowspan="6" align="center"><img src="Turck-logo.png" alt="Vendor Logo"></td></tr>
+<tr><td>Vendor Name</td>
+<td>Turck</td></tr>
+<tr><td>Vendor Text</td>
+<td>TURCK</td></tr>
+<tr><td>Vendor URL</td>
+<td><a href="http://www.turck.com" target="_blank">http://www.turck.com</a></td></tr>
+<tr><td>Device ID</td>
+<td>139266 (0x022002)</td></tr>
+<tr><td>DeviceFamily</td>
+<td>TTM… series</td>
+<tr><th colspan="3">Features</th></tr>
+<tr><td>Block Parameter</td>
+<td colspan="2">yes</td></tr>
+<tr><td>Data Storage</td>
+<td colspan="2">yes</td></tr>
+<tr><td>Profile Characteristic</td>
+<td colspan="2">0x0001 (Device Profile: Smart Sensor), 0x8000 (Function Class: Device Identification), 0x8001 (Function Class: Binary Data Channel), 0x8002 (Function Class: Process Data Variables), 0x8003 (Function Class: Device Diagnosis)</td></tr>
+<tr><td>Supported Access Locks</td>
+<td colspan="2">Parameter: yes, Data Storage: yes, Local Parameterization: no, Local User Interface: no</td></tr>
+<tr><th colspan="3">Communication</th></tr>
+<tr><td>IO-Link Revision</td>
+<td colspan="2">V1.1</td></tr>
+<tr><td>Compatible with</td>
+<td colspan="2">V1.0</td></tr>
+<tr><td>Transmission Rate</td><td colspan="2">38400 bit/s (COM2)</td></tr>
+<tr><td>Minimum Cycle Time</td>
+<td colspan="2">131.2 ms</td></tr>
+<tr><td>SIO Mode Supported</td>
+<td colspan="2">yes</td></tr>
+<tr><td>M-Sequence Capability</td><td colspan="2">PREOPERATE = TYPE_1_V with 32 octets on-request data<br>OPERATE = TYPE_2_V with 32 octets on-request data<br>ISDU supported</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-203A-CF-LIUPN-H1140-L100</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: rod-type probe / 3 mm accuracy Class A process connection: Via compression fitting immersion depth: 100 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910620</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-203A-CF-LIUPN-H1140-L100/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: rod-type probe / 3 mm accuracy Class A process connection: Via compression fitting immersion depth: 100 mm customized switchpoint or analog start and end point
+</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910621</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-203A-CF-LIUPN-H1140-L150</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: rod-type probe / 3 mm accuracy Class A process connection: Via compression fitting immersion depth: 150 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910622</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-203A-CF-LIUPN-H1140-L150/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: rod-type probe / 3 mm accuracy Class A process connection: Via compression fitting immersion depth: 150 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910623</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-206A-CF-LIUPN-H1140-L100</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 206A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 100 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910624</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-206A-CF-LIUPN-H1140-L100/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 206A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 100 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910625</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-206A-CF-LIUPN-H1140-L150</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 206A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 150 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910626</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-206A-CF-LIUPN-H1140-L150/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 206A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 150 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910627</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-103A-G1/8-LIUPN-H1140-L013</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 103A rod-type probe / 3 mm accuracy: Class A process connection: With screw-in thread immersion depth: 13 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910628</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-103A-G1/8-LIUPN-H1140-L013/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 103A rod-type probe / 3 mm accuracy: Class A process connection: With screw-in thread immersion depth: 13 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910629</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-103A-G1/8-LIUPN-H1140-L024</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 103A rod-type probe / 3 mm accuracy: Class A process connection: With screw-in thread immersion depth: 24 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910630</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-103A-G1/8-LIUPN-H1140-L024/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 103A rod-type probe / 3 mm accuracy: Class A process connection: With screw-in thread immersion depth: 24 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910631</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-100-LIUPN-H1140</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Process connection: With screw-in thread</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910632</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTM-100-LIUPN-H1140/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Process connection: With screw-in thread customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910633</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-103A-G1/8-LIUPN-H1140-L013</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 103A rod-type probe / 3 mm accuracy: Class A process connection: With screw-in thread immersion depth: 13 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910650</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-103A-G1/8-LIUPN-H1140-L013/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 103A rod-type probe / 3 mm accuracy: Class A process connection: With screw-in thread immersion depth: 13 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910651</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-103A-G1/8-LIUPN-H1140-L024</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 103A rod-type probe / 3 mm accuracy: Class A process connection: With screw-in thread immersion depth: 24 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910652</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-103A-G1/8-LIUPN-H1140-L024/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 103A rod-type probe / 3 mm accuracy: Class A process connection: With screw-in thread immersion depth: 24 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910653</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-100-LIUPN-H1140</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Process connection: With screw-in thread</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910654</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-100-LIUPN-H1140/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Process connection: With screw-in thread customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910655</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-203A-CF-LIUPN-H1140-L100</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 203A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 100 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910656</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-203A-CF-LIUPN-H1140-L100/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 203A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 100 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910657</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-203A-CF-LIUPN-H1140-L150</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 203A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 150 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910658</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-203A-CF-LIUPN-H1140-L150/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 203A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 150 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910659</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-206A-CF-LIUPN-H1140-L100</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 206A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 100 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910660</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-206A-CF-LIUPN-H1140-L100/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 206A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 100 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910661</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-206A-CF-LIUPN-H1140-L150</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 206A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 150 mm</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910662</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+<tr><th>Device Variant</th>
+<th colspan="2">TTMS-206A-CF-LIUPN-H1140-L150/S713</th></tr>
+<tr><td>Description</td>
+<td colspan="2">Design: 206A rod-type probe / 3 mm accuracy: Class A process connection: Via compression fitting immersion depth: 150 mm customized switchpoint or analog start and end point</td></tr>
+<tr><td>Product ID</td>
+<td colspan="2">9910663</td></tr>
+<tr><td>Device Icon</td>
+<td colspan="2"><img src="Turck-TTM-icon.png" alt="Device Icon"></td></tr>
+<tr><td>Device Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="Turck-TTM-pic.png" alt="Device Symbol"></td></tr>
+<tr><td>Connection Type</td><td colspan="2">M12-4 connector</td></tr>
+<tr><td>Connection Symbol</td>
+<td colspan="2"><img width="48px" height="48px" src="TURCK-TTM-con-pic.png" alt="Connection Symbol"></td></tr>
+<tr><td>- pin 1</td>
+<td colspan="2">brown; L+</td></tr>
+<tr><td>- pin 2</td>
+<td colspan="2">white; Other</td></tr>
+<tr><td>- pin 3</td>
+<td colspan="2">(light) blue; L-</td></tr>
+<tr><td>- pin 4</td>
+<td colspan="2">black; C/Q</td></tr>
+</table>
+
+<br><div class="link"><a name="ProcessData"></a><a href="#Top">[Top]</a></div>
+<h2>ProcessData id=PD_ProcessData</h2>
+<h2>ProcessDataIn "Process value" id=PD_ProcessDataIn</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">bit length: 16<br>
+data type: 16-bit Record (subindex access not supported)<br>
+</font>
+<br><table width="750">
+<tr style="text-align:center"><th>subindex</th>
+<th>bit offset</th>
+<th>data type</th>
+<th>allowed values</th>
+<th>default value</th>
+<th>acc. restr.</th>
+<th>mod. other var.</th>
+<th>excl. from DS</th>
+<th>name</th>
+<th>description</th></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">1</td>
+<td>1</td>
+<td>15-bit UInteger</td>
+<td>0 = See events for more details, 1..2559 = Undershoot, 2560..30207, 30208..32767 = Overshoot</td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Process value</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">2</td>
+<td>0</td>
+<td>Boolean</td>
+<td>false = Off, true = On</td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Switch</td>
+<td></td></tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 0</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">15</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td colspan="8" style="width:661px;background-color:#FF0000">1</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+<td style="width:80px">7</td>
+</tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 1</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td colspan="7" style="width:578px;background-color:#FF0000">1</td>
+<td style="width:80px;background-color:#FFA500">2</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+<td style="width:80px">&nbsp;</td>
+</tr>
+</table>
+<br><div class="link"><a name="#StdVariables"></a><a href="#Top">[Top]</a></div>
+<h2>Standard Variable "Direct Parameters 1" index=0 id=V_DirectParameters_1</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 128-bit Record<br>
+access rights: rw<br>
+</font>
+<br><table width="750">
+<tr style="text-align:center"><th>subindex</th>
+<th>bit offset</th>
+<th>data type</th>
+<th>allowed values</th>
+<th>default value</th>
+<th>acc. restr.</th>
+<th>mod. other var.</th>
+<th>excl. from DS</th>
+<th>name</th>
+<th>description</th></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">1</td>
+<td>120</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Reserved</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">2</td>
+<td>112</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Master Cycle Time</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFFF99">3</td>
+<td>104</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Min Cycle Time</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CC00">4</td>
+<td>96</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>M-Sequence Capability</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#33CCCC">5</td>
+<td>88</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre">17</span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>IO-Link Version ID</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CCFF">6</td>
+<td>80</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Process Data Input Length</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#CC99FF">7</td>
+<td>72</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Process Data Output Length</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#A9A9A9">8</td>
+<td>64</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Vendor ID 1</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">9</td>
+<td>56</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Vendor ID 2</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">10</td>
+<td>48</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Device ID 1</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFFF99">11</td>
+<td>40</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Device ID 2</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CC00">12</td>
+<td>32</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Device ID 3</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#33CCCC">13</td>
+<td>24</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Reserved</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CCFF">14</td>
+<td>16</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Reserved</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#CC99FF">15</td>
+<td>8</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td>ro</td>
+<td></td>
+<td></td>
+<td>Reserved</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#A9A9A9">16</td>
+<td>0</td>
+<td>8-bit UInteger</td>
+<td>128 = Device Reset, 130 = Restore Factory Settings, 160 = Test event appear, 161 = Test event disappear</td>
+<td><span style="white-space:pre"></span></td>
+<td>wo</td>
+<td>X</td>
+<td></td>
+<td>Standard Command</td>
+<td></td></tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FF0000">1</td>
+<td style="width:80px;background-color:#FFA500">2</td>
+<td style="width:80px;background-color:#FFFF99">3</td>
+<td style="width:80px;background-color:#99CC00">4</td>
+<td style="width:80px;background-color:#33CCCC">5</td>
+<td style="width:80px;background-color:#99CCFF">6</td>
+<td style="width:80px;background-color:#CC99FF">7</td>
+<td style="width:80px;background-color:#A9A9A9">8</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FF0000">9</td>
+<td style="width:80px;background-color:#FFA500">10</td>
+<td style="width:80px;background-color:#FFFF99">11</td>
+<td style="width:80px;background-color:#99CC00">12</td>
+<td style="width:80px;background-color:#33CCCC">13</td>
+<td style="width:80px;background-color:#99CCFF">14</td>
+<td style="width:80px;background-color:#CC99FF">15</td>
+<td style="width:80px;background-color:#A9A9A9">16</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Direct Parameters 2" index=1 id=V_DirectParameters_2</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 128-bit Record<br>
+access rights: rw<br>
+</font>
+<br><table width="750">
+<tr style="text-align:center"><th>subindex</th>
+<th>bit offset</th>
+<th>data type</th>
+<th>allowed values</th>
+<th>default value</th>
+<th>acc. restr.</th>
+<th>mod. other var.</th>
+<th>excl. from DS</th>
+<th>name</th>
+<th>description</th></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">1</td>
+<td>120</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 1</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">2</td>
+<td>112</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 2</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFFF99">3</td>
+<td>104</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 3</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CC00">4</td>
+<td>96</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 4</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#33CCCC">5</td>
+<td>88</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 5</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CCFF">6</td>
+<td>80</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 6</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#CC99FF">7</td>
+<td>72</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 7</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#A9A9A9">8</td>
+<td>64</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 8</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">9</td>
+<td>56</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 9</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">10</td>
+<td>48</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 10</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFFF99">11</td>
+<td>40</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 11</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CC00">12</td>
+<td>32</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 12</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#33CCCC">13</td>
+<td>24</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 13</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CCFF">14</td>
+<td>16</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 14</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#CC99FF">15</td>
+<td>8</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 15</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#A9A9A9">16</td>
+<td>0</td>
+<td>8-bit UInteger</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Device Specific Parameter 16</td>
+<td></td></tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FF0000">1</td>
+<td style="width:80px;background-color:#FFA500">2</td>
+<td style="width:80px;background-color:#FFFF99">3</td>
+<td style="width:80px;background-color:#99CC00">4</td>
+<td style="width:80px;background-color:#33CCCC">5</td>
+<td style="width:80px;background-color:#99CCFF">6</td>
+<td style="width:80px;background-color:#CC99FF">7</td>
+<td style="width:80px;background-color:#A9A9A9">8</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FF0000">9</td>
+<td style="width:80px;background-color:#FFA500">10</td>
+<td style="width:80px;background-color:#FFFF99">11</td>
+<td style="width:80px;background-color:#99CC00">12</td>
+<td style="width:80px;background-color:#33CCCC">13</td>
+<td style="width:80px;background-color:#99CCFF">14</td>
+<td style="width:80px;background-color:#CC99FF">15</td>
+<td style="width:80px;background-color:#A9A9A9">16</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Standard Command" index=2 id=V_SystemCommand</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 8-bit UInteger<br>
+allowed values: 128 = Device Reset, 130 = Restore Factory Settings, 160 = Test event appear, 161 = Test event disappear<br>
+access rights: wo<br>
+modifies other variables<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+</table>
+<h2>Standard Variable "Device Access Locks" index=12 id=V_DeviceAccessLocks</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 16-bit Record (subindex access not supported)<br>
+access rights: rw<br>
+</font>
+<br><table width="750">
+<tr style="text-align:center"><th>subindex</th>
+<th>bit offset</th>
+<th>data type</th>
+<th>allowed values</th>
+<th>default value</th>
+<th>acc. restr.</th>
+<th>mod. other var.</th>
+<th>excl. from DS</th>
+<th>name</th>
+<th>description</th></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">1</td>
+<td>0</td>
+<td>Boolean</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Parameter (write) Access Lock</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">2</td>
+<td>1</td>
+<td>Boolean</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Data Storage Lock</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFFF99">3</td>
+<td>2</td>
+<td>Boolean</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Local Parameterization Lock</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#99CC00">4</td>
+<td>3</td>
+<td>Boolean</td>
+<td></td>
+<td><span style="white-space:pre"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Local User Interface Lock</td>
+<td></td></tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 0</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">15</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+</tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 1</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td style="width:80px;background-color:#99CC00">4</td>
+<td style="width:80px;background-color:#FFFF99">3</td>
+<td style="width:80px;background-color:#FFA500">2</td>
+<td style="width:80px;background-color:#FF0000">1</td>
+</tr>
+</table>
+<h2>Standard Variable "Vendor Name" index=16 id=V_VendorName</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 64-octet String UTF-8<br>
+default value: <span style="white-space:pre">"TURCK"</span><br>
+access rights: ro<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">511 - 504</td>
+<td style="width:80px">503 - 496</td>
+<td style="width:80px">495 - 488</td>
+<td style="width:80px">487 - 480</td>
+<td style="width:80px">479 - 472</td>
+<td style="width:80px">471 - 464</td>
+<td style="width:80px">463 - 456</td>
+<td style="width:80px">455 - 448</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">447 - 440</td>
+<td style="width:80px">439 - 432</td>
+<td style="width:80px">431 - 424</td>
+<td style="width:80px">423 - 416</td>
+<td style="width:80px">415 - 408</td>
+<td style="width:80px">407 - 400</td>
+<td style="width:80px">399 - 392</td>
+<td style="width:80px">391 - 384</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">16</td>
+<td style="width:80px">17</td>
+<td style="width:80px">18</td>
+<td style="width:80px">19</td>
+<td style="width:80px">20</td>
+<td style="width:80px">21</td>
+<td style="width:80px">22</td>
+<td style="width:80px">23</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">383 - 376</td>
+<td style="width:80px">375 - 368</td>
+<td style="width:80px">367 - 360</td>
+<td style="width:80px">359 - 352</td>
+<td style="width:80px">351 - 344</td>
+<td style="width:80px">343 - 336</td>
+<td style="width:80px">335 - 328</td>
+<td style="width:80px">327 - 320</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">24</td>
+<td style="width:80px">25</td>
+<td style="width:80px">26</td>
+<td style="width:80px">27</td>
+<td style="width:80px">28</td>
+<td style="width:80px">29</td>
+<td style="width:80px">30</td>
+<td style="width:80px">31</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">319 - 312</td>
+<td style="width:80px">311 - 304</td>
+<td style="width:80px">303 - 296</td>
+<td style="width:80px">295 - 288</td>
+<td style="width:80px">287 - 280</td>
+<td style="width:80px">279 - 272</td>
+<td style="width:80px">271 - 264</td>
+<td style="width:80px">263 - 256</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">32</td>
+<td style="width:80px">33</td>
+<td style="width:80px">34</td>
+<td style="width:80px">35</td>
+<td style="width:80px">36</td>
+<td style="width:80px">37</td>
+<td style="width:80px">38</td>
+<td style="width:80px">39</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">255 - 248</td>
+<td style="width:80px">247 - 240</td>
+<td style="width:80px">239 - 232</td>
+<td style="width:80px">231 - 224</td>
+<td style="width:80px">223 - 216</td>
+<td style="width:80px">215 - 208</td>
+<td style="width:80px">207 - 200</td>
+<td style="width:80px">199 - 192</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">40</td>
+<td style="width:80px">41</td>
+<td style="width:80px">42</td>
+<td style="width:80px">43</td>
+<td style="width:80px">44</td>
+<td style="width:80px">45</td>
+<td style="width:80px">46</td>
+<td style="width:80px">47</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">191 - 184</td>
+<td style="width:80px">183 - 176</td>
+<td style="width:80px">175 - 168</td>
+<td style="width:80px">167 - 160</td>
+<td style="width:80px">159 - 152</td>
+<td style="width:80px">151 - 144</td>
+<td style="width:80px">143 - 136</td>
+<td style="width:80px">135 - 128</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">48</td>
+<td style="width:80px">49</td>
+<td style="width:80px">50</td>
+<td style="width:80px">51</td>
+<td style="width:80px">52</td>
+<td style="width:80px">53</td>
+<td style="width:80px">54</td>
+<td style="width:80px">55</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">56</td>
+<td style="width:80px">57</td>
+<td style="width:80px">58</td>
+<td style="width:80px">59</td>
+<td style="width:80px">60</td>
+<td style="width:80px">61</td>
+<td style="width:80px">62</td>
+<td style="width:80px">63</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Vendor Text" index=17 id=V_VendorText</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 64-octet String UTF-8<br>
+default value: <span style="white-space:pre">"www.turck.com"</span><br>
+access rights: ro<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">511 - 504</td>
+<td style="width:80px">503 - 496</td>
+<td style="width:80px">495 - 488</td>
+<td style="width:80px">487 - 480</td>
+<td style="width:80px">479 - 472</td>
+<td style="width:80px">471 - 464</td>
+<td style="width:80px">463 - 456</td>
+<td style="width:80px">455 - 448</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">447 - 440</td>
+<td style="width:80px">439 - 432</td>
+<td style="width:80px">431 - 424</td>
+<td style="width:80px">423 - 416</td>
+<td style="width:80px">415 - 408</td>
+<td style="width:80px">407 - 400</td>
+<td style="width:80px">399 - 392</td>
+<td style="width:80px">391 - 384</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">16</td>
+<td style="width:80px">17</td>
+<td style="width:80px">18</td>
+<td style="width:80px">19</td>
+<td style="width:80px">20</td>
+<td style="width:80px">21</td>
+<td style="width:80px">22</td>
+<td style="width:80px">23</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">383 - 376</td>
+<td style="width:80px">375 - 368</td>
+<td style="width:80px">367 - 360</td>
+<td style="width:80px">359 - 352</td>
+<td style="width:80px">351 - 344</td>
+<td style="width:80px">343 - 336</td>
+<td style="width:80px">335 - 328</td>
+<td style="width:80px">327 - 320</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">24</td>
+<td style="width:80px">25</td>
+<td style="width:80px">26</td>
+<td style="width:80px">27</td>
+<td style="width:80px">28</td>
+<td style="width:80px">29</td>
+<td style="width:80px">30</td>
+<td style="width:80px">31</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">319 - 312</td>
+<td style="width:80px">311 - 304</td>
+<td style="width:80px">303 - 296</td>
+<td style="width:80px">295 - 288</td>
+<td style="width:80px">287 - 280</td>
+<td style="width:80px">279 - 272</td>
+<td style="width:80px">271 - 264</td>
+<td style="width:80px">263 - 256</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">32</td>
+<td style="width:80px">33</td>
+<td style="width:80px">34</td>
+<td style="width:80px">35</td>
+<td style="width:80px">36</td>
+<td style="width:80px">37</td>
+<td style="width:80px">38</td>
+<td style="width:80px">39</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">255 - 248</td>
+<td style="width:80px">247 - 240</td>
+<td style="width:80px">239 - 232</td>
+<td style="width:80px">231 - 224</td>
+<td style="width:80px">223 - 216</td>
+<td style="width:80px">215 - 208</td>
+<td style="width:80px">207 - 200</td>
+<td style="width:80px">199 - 192</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">40</td>
+<td style="width:80px">41</td>
+<td style="width:80px">42</td>
+<td style="width:80px">43</td>
+<td style="width:80px">44</td>
+<td style="width:80px">45</td>
+<td style="width:80px">46</td>
+<td style="width:80px">47</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">191 - 184</td>
+<td style="width:80px">183 - 176</td>
+<td style="width:80px">175 - 168</td>
+<td style="width:80px">167 - 160</td>
+<td style="width:80px">159 - 152</td>
+<td style="width:80px">151 - 144</td>
+<td style="width:80px">143 - 136</td>
+<td style="width:80px">135 - 128</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">48</td>
+<td style="width:80px">49</td>
+<td style="width:80px">50</td>
+<td style="width:80px">51</td>
+<td style="width:80px">52</td>
+<td style="width:80px">53</td>
+<td style="width:80px">54</td>
+<td style="width:80px">55</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">56</td>
+<td style="width:80px">57</td>
+<td style="width:80px">58</td>
+<td style="width:80px">59</td>
+<td style="width:80px">60</td>
+<td style="width:80px">61</td>
+<td style="width:80px">62</td>
+<td style="width:80px">63</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Product Name" index=18 id=V_ProductName</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 64-octet String UTF-8<br>
+default value: <span style="white-space:pre">"TTM-...LIUPN..."</span><br>
+access rights: ro<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">511 - 504</td>
+<td style="width:80px">503 - 496</td>
+<td style="width:80px">495 - 488</td>
+<td style="width:80px">487 - 480</td>
+<td style="width:80px">479 - 472</td>
+<td style="width:80px">471 - 464</td>
+<td style="width:80px">463 - 456</td>
+<td style="width:80px">455 - 448</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">447 - 440</td>
+<td style="width:80px">439 - 432</td>
+<td style="width:80px">431 - 424</td>
+<td style="width:80px">423 - 416</td>
+<td style="width:80px">415 - 408</td>
+<td style="width:80px">407 - 400</td>
+<td style="width:80px">399 - 392</td>
+<td style="width:80px">391 - 384</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">16</td>
+<td style="width:80px">17</td>
+<td style="width:80px">18</td>
+<td style="width:80px">19</td>
+<td style="width:80px">20</td>
+<td style="width:80px">21</td>
+<td style="width:80px">22</td>
+<td style="width:80px">23</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">383 - 376</td>
+<td style="width:80px">375 - 368</td>
+<td style="width:80px">367 - 360</td>
+<td style="width:80px">359 - 352</td>
+<td style="width:80px">351 - 344</td>
+<td style="width:80px">343 - 336</td>
+<td style="width:80px">335 - 328</td>
+<td style="width:80px">327 - 320</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">24</td>
+<td style="width:80px">25</td>
+<td style="width:80px">26</td>
+<td style="width:80px">27</td>
+<td style="width:80px">28</td>
+<td style="width:80px">29</td>
+<td style="width:80px">30</td>
+<td style="width:80px">31</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">319 - 312</td>
+<td style="width:80px">311 - 304</td>
+<td style="width:80px">303 - 296</td>
+<td style="width:80px">295 - 288</td>
+<td style="width:80px">287 - 280</td>
+<td style="width:80px">279 - 272</td>
+<td style="width:80px">271 - 264</td>
+<td style="width:80px">263 - 256</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">32</td>
+<td style="width:80px">33</td>
+<td style="width:80px">34</td>
+<td style="width:80px">35</td>
+<td style="width:80px">36</td>
+<td style="width:80px">37</td>
+<td style="width:80px">38</td>
+<td style="width:80px">39</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">255 - 248</td>
+<td style="width:80px">247 - 240</td>
+<td style="width:80px">239 - 232</td>
+<td style="width:80px">231 - 224</td>
+<td style="width:80px">223 - 216</td>
+<td style="width:80px">215 - 208</td>
+<td style="width:80px">207 - 200</td>
+<td style="width:80px">199 - 192</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">40</td>
+<td style="width:80px">41</td>
+<td style="width:80px">42</td>
+<td style="width:80px">43</td>
+<td style="width:80px">44</td>
+<td style="width:80px">45</td>
+<td style="width:80px">46</td>
+<td style="width:80px">47</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">191 - 184</td>
+<td style="width:80px">183 - 176</td>
+<td style="width:80px">175 - 168</td>
+<td style="width:80px">167 - 160</td>
+<td style="width:80px">159 - 152</td>
+<td style="width:80px">151 - 144</td>
+<td style="width:80px">143 - 136</td>
+<td style="width:80px">135 - 128</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">48</td>
+<td style="width:80px">49</td>
+<td style="width:80px">50</td>
+<td style="width:80px">51</td>
+<td style="width:80px">52</td>
+<td style="width:80px">53</td>
+<td style="width:80px">54</td>
+<td style="width:80px">55</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">56</td>
+<td style="width:80px">57</td>
+<td style="width:80px">58</td>
+<td style="width:80px">59</td>
+<td style="width:80px">60</td>
+<td style="width:80px">61</td>
+<td style="width:80px">62</td>
+<td style="width:80px">63</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Product ID" index=19 id=V_ProductID</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 64-octet String UTF-8<br>
+access rights: ro<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">511 - 504</td>
+<td style="width:80px">503 - 496</td>
+<td style="width:80px">495 - 488</td>
+<td style="width:80px">487 - 480</td>
+<td style="width:80px">479 - 472</td>
+<td style="width:80px">471 - 464</td>
+<td style="width:80px">463 - 456</td>
+<td style="width:80px">455 - 448</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">447 - 440</td>
+<td style="width:80px">439 - 432</td>
+<td style="width:80px">431 - 424</td>
+<td style="width:80px">423 - 416</td>
+<td style="width:80px">415 - 408</td>
+<td style="width:80px">407 - 400</td>
+<td style="width:80px">399 - 392</td>
+<td style="width:80px">391 - 384</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">16</td>
+<td style="width:80px">17</td>
+<td style="width:80px">18</td>
+<td style="width:80px">19</td>
+<td style="width:80px">20</td>
+<td style="width:80px">21</td>
+<td style="width:80px">22</td>
+<td style="width:80px">23</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">383 - 376</td>
+<td style="width:80px">375 - 368</td>
+<td style="width:80px">367 - 360</td>
+<td style="width:80px">359 - 352</td>
+<td style="width:80px">351 - 344</td>
+<td style="width:80px">343 - 336</td>
+<td style="width:80px">335 - 328</td>
+<td style="width:80px">327 - 320</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">24</td>
+<td style="width:80px">25</td>
+<td style="width:80px">26</td>
+<td style="width:80px">27</td>
+<td style="width:80px">28</td>
+<td style="width:80px">29</td>
+<td style="width:80px">30</td>
+<td style="width:80px">31</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">319 - 312</td>
+<td style="width:80px">311 - 304</td>
+<td style="width:80px">303 - 296</td>
+<td style="width:80px">295 - 288</td>
+<td style="width:80px">287 - 280</td>
+<td style="width:80px">279 - 272</td>
+<td style="width:80px">271 - 264</td>
+<td style="width:80px">263 - 256</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">32</td>
+<td style="width:80px">33</td>
+<td style="width:80px">34</td>
+<td style="width:80px">35</td>
+<td style="width:80px">36</td>
+<td style="width:80px">37</td>
+<td style="width:80px">38</td>
+<td style="width:80px">39</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">255 - 248</td>
+<td style="width:80px">247 - 240</td>
+<td style="width:80px">239 - 232</td>
+<td style="width:80px">231 - 224</td>
+<td style="width:80px">223 - 216</td>
+<td style="width:80px">215 - 208</td>
+<td style="width:80px">207 - 200</td>
+<td style="width:80px">199 - 192</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">40</td>
+<td style="width:80px">41</td>
+<td style="width:80px">42</td>
+<td style="width:80px">43</td>
+<td style="width:80px">44</td>
+<td style="width:80px">45</td>
+<td style="width:80px">46</td>
+<td style="width:80px">47</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">191 - 184</td>
+<td style="width:80px">183 - 176</td>
+<td style="width:80px">175 - 168</td>
+<td style="width:80px">167 - 160</td>
+<td style="width:80px">159 - 152</td>
+<td style="width:80px">151 - 144</td>
+<td style="width:80px">143 - 136</td>
+<td style="width:80px">135 - 128</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">48</td>
+<td style="width:80px">49</td>
+<td style="width:80px">50</td>
+<td style="width:80px">51</td>
+<td style="width:80px">52</td>
+<td style="width:80px">53</td>
+<td style="width:80px">54</td>
+<td style="width:80px">55</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">56</td>
+<td style="width:80px">57</td>
+<td style="width:80px">58</td>
+<td style="width:80px">59</td>
+<td style="width:80px">60</td>
+<td style="width:80px">61</td>
+<td style="width:80px">62</td>
+<td style="width:80px">63</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Product Text" index=20 id=V_ProductText</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 64-octet String UTF-8<br>
+access rights: ro<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">511 - 504</td>
+<td style="width:80px">503 - 496</td>
+<td style="width:80px">495 - 488</td>
+<td style="width:80px">487 - 480</td>
+<td style="width:80px">479 - 472</td>
+<td style="width:80px">471 - 464</td>
+<td style="width:80px">463 - 456</td>
+<td style="width:80px">455 - 448</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">447 - 440</td>
+<td style="width:80px">439 - 432</td>
+<td style="width:80px">431 - 424</td>
+<td style="width:80px">423 - 416</td>
+<td style="width:80px">415 - 408</td>
+<td style="width:80px">407 - 400</td>
+<td style="width:80px">399 - 392</td>
+<td style="width:80px">391 - 384</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">16</td>
+<td style="width:80px">17</td>
+<td style="width:80px">18</td>
+<td style="width:80px">19</td>
+<td style="width:80px">20</td>
+<td style="width:80px">21</td>
+<td style="width:80px">22</td>
+<td style="width:80px">23</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">383 - 376</td>
+<td style="width:80px">375 - 368</td>
+<td style="width:80px">367 - 360</td>
+<td style="width:80px">359 - 352</td>
+<td style="width:80px">351 - 344</td>
+<td style="width:80px">343 - 336</td>
+<td style="width:80px">335 - 328</td>
+<td style="width:80px">327 - 320</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">24</td>
+<td style="width:80px">25</td>
+<td style="width:80px">26</td>
+<td style="width:80px">27</td>
+<td style="width:80px">28</td>
+<td style="width:80px">29</td>
+<td style="width:80px">30</td>
+<td style="width:80px">31</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">319 - 312</td>
+<td style="width:80px">311 - 304</td>
+<td style="width:80px">303 - 296</td>
+<td style="width:80px">295 - 288</td>
+<td style="width:80px">287 - 280</td>
+<td style="width:80px">279 - 272</td>
+<td style="width:80px">271 - 264</td>
+<td style="width:80px">263 - 256</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">32</td>
+<td style="width:80px">33</td>
+<td style="width:80px">34</td>
+<td style="width:80px">35</td>
+<td style="width:80px">36</td>
+<td style="width:80px">37</td>
+<td style="width:80px">38</td>
+<td style="width:80px">39</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">255 - 248</td>
+<td style="width:80px">247 - 240</td>
+<td style="width:80px">239 - 232</td>
+<td style="width:80px">231 - 224</td>
+<td style="width:80px">223 - 216</td>
+<td style="width:80px">215 - 208</td>
+<td style="width:80px">207 - 200</td>
+<td style="width:80px">199 - 192</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">40</td>
+<td style="width:80px">41</td>
+<td style="width:80px">42</td>
+<td style="width:80px">43</td>
+<td style="width:80px">44</td>
+<td style="width:80px">45</td>
+<td style="width:80px">46</td>
+<td style="width:80px">47</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">191 - 184</td>
+<td style="width:80px">183 - 176</td>
+<td style="width:80px">175 - 168</td>
+<td style="width:80px">167 - 160</td>
+<td style="width:80px">159 - 152</td>
+<td style="width:80px">151 - 144</td>
+<td style="width:80px">143 - 136</td>
+<td style="width:80px">135 - 128</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">48</td>
+<td style="width:80px">49</td>
+<td style="width:80px">50</td>
+<td style="width:80px">51</td>
+<td style="width:80px">52</td>
+<td style="width:80px">53</td>
+<td style="width:80px">54</td>
+<td style="width:80px">55</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">56</td>
+<td style="width:80px">57</td>
+<td style="width:80px">58</td>
+<td style="width:80px">59</td>
+<td style="width:80px">60</td>
+<td style="width:80px">61</td>
+<td style="width:80px">62</td>
+<td style="width:80px">63</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Serial Number" index=21 id=V_SerialNumber</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 16-octet String UTF-8<br>
+access rights: ro<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Firmware Version" index=23 id=V_FirmwareRevision</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 64-octet String UTF-8<br>
+access rights: ro<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">511 - 504</td>
+<td style="width:80px">503 - 496</td>
+<td style="width:80px">495 - 488</td>
+<td style="width:80px">487 - 480</td>
+<td style="width:80px">479 - 472</td>
+<td style="width:80px">471 - 464</td>
+<td style="width:80px">463 - 456</td>
+<td style="width:80px">455 - 448</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">447 - 440</td>
+<td style="width:80px">439 - 432</td>
+<td style="width:80px">431 - 424</td>
+<td style="width:80px">423 - 416</td>
+<td style="width:80px">415 - 408</td>
+<td style="width:80px">407 - 400</td>
+<td style="width:80px">399 - 392</td>
+<td style="width:80px">391 - 384</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">16</td>
+<td style="width:80px">17</td>
+<td style="width:80px">18</td>
+<td style="width:80px">19</td>
+<td style="width:80px">20</td>
+<td style="width:80px">21</td>
+<td style="width:80px">22</td>
+<td style="width:80px">23</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">383 - 376</td>
+<td style="width:80px">375 - 368</td>
+<td style="width:80px">367 - 360</td>
+<td style="width:80px">359 - 352</td>
+<td style="width:80px">351 - 344</td>
+<td style="width:80px">343 - 336</td>
+<td style="width:80px">335 - 328</td>
+<td style="width:80px">327 - 320</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">24</td>
+<td style="width:80px">25</td>
+<td style="width:80px">26</td>
+<td style="width:80px">27</td>
+<td style="width:80px">28</td>
+<td style="width:80px">29</td>
+<td style="width:80px">30</td>
+<td style="width:80px">31</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">319 - 312</td>
+<td style="width:80px">311 - 304</td>
+<td style="width:80px">303 - 296</td>
+<td style="width:80px">295 - 288</td>
+<td style="width:80px">287 - 280</td>
+<td style="width:80px">279 - 272</td>
+<td style="width:80px">271 - 264</td>
+<td style="width:80px">263 - 256</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">32</td>
+<td style="width:80px">33</td>
+<td style="width:80px">34</td>
+<td style="width:80px">35</td>
+<td style="width:80px">36</td>
+<td style="width:80px">37</td>
+<td style="width:80px">38</td>
+<td style="width:80px">39</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">255 - 248</td>
+<td style="width:80px">247 - 240</td>
+<td style="width:80px">239 - 232</td>
+<td style="width:80px">231 - 224</td>
+<td style="width:80px">223 - 216</td>
+<td style="width:80px">215 - 208</td>
+<td style="width:80px">207 - 200</td>
+<td style="width:80px">199 - 192</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">40</td>
+<td style="width:80px">41</td>
+<td style="width:80px">42</td>
+<td style="width:80px">43</td>
+<td style="width:80px">44</td>
+<td style="width:80px">45</td>
+<td style="width:80px">46</td>
+<td style="width:80px">47</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">191 - 184</td>
+<td style="width:80px">183 - 176</td>
+<td style="width:80px">175 - 168</td>
+<td style="width:80px">167 - 160</td>
+<td style="width:80px">159 - 152</td>
+<td style="width:80px">151 - 144</td>
+<td style="width:80px">143 - 136</td>
+<td style="width:80px">135 - 128</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">48</td>
+<td style="width:80px">49</td>
+<td style="width:80px">50</td>
+<td style="width:80px">51</td>
+<td style="width:80px">52</td>
+<td style="width:80px">53</td>
+<td style="width:80px">54</td>
+<td style="width:80px">55</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">56</td>
+<td style="width:80px">57</td>
+<td style="width:80px">58</td>
+<td style="width:80px">59</td>
+<td style="width:80px">60</td>
+<td style="width:80px">61</td>
+<td style="width:80px">62</td>
+<td style="width:80px">63</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Application Specific Tag" index=24 id=V_ApplicationSpecificTag</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 32-octet String UTF-8<br>
+access rights: rw<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">255 - 248</td>
+<td style="width:80px">247 - 240</td>
+<td style="width:80px">239 - 232</td>
+<td style="width:80px">231 - 224</td>
+<td style="width:80px">223 - 216</td>
+<td style="width:80px">215 - 208</td>
+<td style="width:80px">207 - 200</td>
+<td style="width:80px">199 - 192</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">191 - 184</td>
+<td style="width:80px">183 - 176</td>
+<td style="width:80px">175 - 168</td>
+<td style="width:80px">167 - 160</td>
+<td style="width:80px">159 - 152</td>
+<td style="width:80px">151 - 144</td>
+<td style="width:80px">143 - 136</td>
+<td style="width:80px">135 - 128</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">16</td>
+<td style="width:80px">17</td>
+<td style="width:80px">18</td>
+<td style="width:80px">19</td>
+<td style="width:80px">20</td>
+<td style="width:80px">21</td>
+<td style="width:80px">22</td>
+<td style="width:80px">23</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">24</td>
+<td style="width:80px">25</td>
+<td style="width:80px">26</td>
+<td style="width:80px">27</td>
+<td style="width:80px">28</td>
+<td style="width:80px">29</td>
+<td style="width:80px">30</td>
+<td style="width:80px">31</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+</tr>
+</table>
+<h2>Standard Variable "Device Status" index=36 id=V_DeviceStatus</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: 8-bit UInteger<br>
+allowed values: 0 = Device is OK, 1 = Maintenance required, 2 = Out of specification, 3 = Functional check, 4 = Failure, 5..255 = Reserved<br>
+access rights: ro<br>
+dynamic<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+</table>
+<h2>Standard Variable "Detailed Device Status" index=37 id=V_DetailedDeviceStatus</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: Array[6] of 3-octet OctetString (subindex access not supported)<br>
+access rights: ro<br>
+dynamic<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td style="width:80px">4</td>
+<td style="width:80px">5</td>
+<td style="width:80px">6</td>
+<td style="width:80px">7</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">143 - 136</td>
+<td style="width:80px">135 - 128</td>
+<td style="width:80px">127 - 120</td>
+<td style="width:80px">119 - 112</td>
+<td style="width:80px">111 - 104</td>
+<td style="width:80px">103 - 96</td>
+<td style="width:80px">95 - 88</td>
+<td style="width:80px">87 - 80</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FF0000">1</td>
+<td style="width:80px;background-color:#FF0000">1</td>
+<td style="width:80px;background-color:#FF0000">1</td>
+<td style="width:80px;background-color:#FFA500">2</td>
+<td style="width:80px;background-color:#FFA500">2</td>
+<td style="width:80px;background-color:#FFA500">2</td>
+<td style="width:80px;background-color:#FFFF99">3</td>
+<td style="width:80px;background-color:#FFFF99">3</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">8</td>
+<td style="width:80px">9</td>
+<td style="width:80px">10</td>
+<td style="width:80px">11</td>
+<td style="width:80px">12</td>
+<td style="width:80px">13</td>
+<td style="width:80px">14</td>
+<td style="width:80px">15</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">79 - 72</td>
+<td style="width:80px">71 - 64</td>
+<td style="width:80px">63 - 56</td>
+<td style="width:80px">55 - 48</td>
+<td style="width:80px">47 - 40</td>
+<td style="width:80px">39 - 32</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FFFF99">3</td>
+<td style="width:80px;background-color:#99CC00">4</td>
+<td style="width:80px;background-color:#99CC00">4</td>
+<td style="width:80px;background-color:#99CC00">4</td>
+<td style="width:80px;background-color:#33CCCC">5</td>
+<td style="width:80px;background-color:#33CCCC">5</td>
+<td style="width:80px;background-color:#33CCCC">5</td>
+<td style="width:80px;background-color:#99CCFF">6</td>
+</tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">16</td>
+<td style="width:80px">17</td>
+<td colspan="6" style="width:495px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="6" style="width:495px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#99CCFF">6</td>
+<td style="width:80px;background-color:#99CCFF">6</td>
+<td colspan="6" style="width:495px">&nbsp;</td>
+</tr>
+</table>
+<h2>Standard Variable "Process Data Input" index=40 id=V_ProcessDataInput</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">data type: see ProcessDataIn!<br>
+access rights: ro<br>
+dynamic<br>
+</font>
+<br><div class="link"><a name="#Variables"></a><a href="#Top">[Top]</a></div>
+<h2>Variable "Switch/release point/ window" index=60 id=V_BDC</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: The switch and release point (hystersis mode) resp. upper and lower switchpoint (window mode) are programmable<br>
+data type: 32-bit Record<br>
+access rights: rw<br>
+</font>
+<br><table width="750">
+<tr style="text-align:center"><th>subindex</th>
+<th>bit offset</th>
+<th>data type</th>
+<th>allowed values</th>
+<th>default value</th>
+<th>acc. restr.</th>
+<th>mod. other var.</th>
+<th>excl. from DS</th>
+<th>name</th>
+<th>description</th></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">1</td>
+<td>16</td>
+<td>15-bit UInteger</td>
+<td>2592..30207</td>
+<td><span style="white-space:pre">11883</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Switchpoint/ upper limit value</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">2</td>
+<td>0</td>
+<td>15-bit UInteger</td>
+<td>2560..30175</td>
+<td><span style="white-space:pre">11561</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Release point/ lower limit value</td>
+<td></td></tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 0</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">31</td>
+<td style="width:80px">30</td>
+<td style="width:80px">29</td>
+<td style="width:80px">28</td>
+<td style="width:80px">27</td>
+<td style="width:80px">26</td>
+<td style="width:80px">25</td>
+<td style="width:80px">24</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td colspan="7" style="width:578px;background-color:#FF0000">1</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">&nbsp;</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+</tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 1</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">23</td>
+<td style="width:80px">22</td>
+<td style="width:80px">21</td>
+<td style="width:80px">20</td>
+<td style="width:80px">19</td>
+<td style="width:80px">18</td>
+<td style="width:80px">17</td>
+<td style="width:80px">16</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td colspan="8" style="width:661px;background-color:#FF0000">1</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+</tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 2</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">15</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td colspan="7" style="width:578px;background-color:#FFA500">2</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">&nbsp;</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+</tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 3</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td colspan="8" style="width:661px;background-color:#FFA500">2</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+</tr>
+</table>
+<h2>Variable "Switching output settings" index=61 id=V_BDC_config</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: Switching output settings<br>
+data type: 32-bit Record<br>
+access rights: rw<br>
+</font>
+<br><table width="750">
+<tr style="text-align:center"><th>subindex</th>
+<th>bit offset</th>
+<th>data type</th>
+<th>allowed values</th>
+<th>default value</th>
+<th>acc. restr.</th>
+<th>mod. other var.</th>
+<th>excl. from DS</th>
+<th>name</th>
+<th>description</th></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">1</td>
+<td>24</td>
+<td>8-bit UInteger</td>
+<td>0 = normally open, 1 = normally closed</td>
+<td><span style="white-space:pre">0</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Logic</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">2</td>
+<td>16</td>
+<td>8-bit UInteger</td>
+<td>0 = Deactivted, 2 = Window function, 3 = Hysteresis function</td>
+<td><span style="white-space:pre">3</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Function</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFFF99">3</td>
+<td>0</td>
+<td>16-bit UInteger</td>
+<td>0 = Hysteresis N/A</td>
+<td><span style="white-space:pre">0</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Hysteresis N/A</td>
+<td></td></tr>
+</table>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td style="width:80px">1</td>
+<td style="width:80px">2</td>
+<td style="width:80px">3</td>
+<td colspan="4" style="width:329px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">31 - 24</td>
+<td style="width:80px">23 - 16</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="4" style="width:329px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FF0000">1</td>
+<td style="width:80px;background-color:#FFA500">2</td>
+<td style="width:80px;background-color:#FFFF99">3</td>
+<td style="width:80px;background-color:#FFFF99">3</td>
+<td colspan="4" style="width:329px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">7 - 0</td>
+<td style="width:80px">15 - 8</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="4" style="width:329px">&nbsp;</td>
+</tr>
+</table>
+<h2>Variable "Function" index=82 id=V_analogOutputMode</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: The range of the current output can be set here.<br>
+data type: 8-bit UInteger<br>
+allowed values: 0 = 4-20 mA linear increase, 1 = 20-4 mA linear decrease<br>
+default value: <span style="white-space:pre">0</span><br>
+access rights: rw<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+</table>
+<h2>Variable "Switching output mode" index=83 id=V_pn</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: PNP/NPN configuration of switching outputs. In connected state, PNP outputs are related to the operating voltage, NPN outputs to the ground.<br>
+data type: 8-bit UInteger<br>
+allowed values: 0 = PNP, 1 = NPN<br>
+default value: <span style="white-space:pre">0</span><br>
+access rights: rw<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+</table>
+<h2>Variable "Unit" index=84 id=V_unit</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: Measured values can be displayed in different units.<br>
+data type: 8-bit UInteger<br>
+allowed values: 0 = °C, 1 = °F, 2 = K<br>
+default value: <span style="white-space:pre">0</span><br>
+access rights: rw<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+</table>
+<h2>Variable "Error behavior" index=86 id=V_errorSwitch</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: The error behavior can be parametrized: Select "on" for setting and "off" for resetting the switching output.<br>
+data type: 8-bit UInteger<br>
+allowed values: 0 = Off, 1 = On<br>
+default value: <span style="white-space:pre">0</span><br>
+access rights: rw<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+</table>
+<h2>Variable "Error behavior" index=87 id=V_errorAnalog</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: The error behavior can be parametrized: The selected error current driven by the output. <br>
+data type: 8-bit UInteger<br>
+allowed values: 0 = 3.5 mA, 1 = 21.1 mA<br>
+default value: <span style="white-space:pre">0</span><br>
+access rights: rw<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+</table>
+<h2>Variable "Start/end point of the analog signal" index=98 id=V_analogRange</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: Start and end values of the analog signal are programmable.<br>
+data type: 32-bit Record (subindex access not supported)<br>
+access rights: rw<br>
+</font>
+<br><table width="750">
+<tr style="text-align:center"><th>subindex</th>
+<th>bit offset</th>
+<th>data type</th>
+<th>allowed values</th>
+<th>default value</th>
+<th>acc. restr.</th>
+<th>mod. other var.</th>
+<th>excl. from DS</th>
+<th>name</th>
+<th>description</th></tr>
+<tr style="text-align:center"><td style="background-color:#FF0000">1</td>
+<td>16</td>
+<td>15-bit UInteger</td>
+<td>2560..29564</td>
+<td><span style="white-space:pre">2560</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Start point of the analog signal</td>
+<td></td></tr>
+<tr style="text-align:center"><td style="background-color:#FFA500">2</td>
+<td>0</td>
+<td>15-bit UInteger</td>
+<td>3203..30207</td>
+<td><span style="white-space:pre">30207</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td>End point of th analog signal</td>
+<td></td></tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 0</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">31</td>
+<td style="width:80px">30</td>
+<td style="width:80px">29</td>
+<td style="width:80px">28</td>
+<td style="width:80px">27</td>
+<td style="width:80px">26</td>
+<td style="width:80px">25</td>
+<td style="width:80px">24</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td colspan="7" style="width:578px;background-color:#FF0000">1</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">&nbsp;</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+</tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 1</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">23</td>
+<td style="width:80px">22</td>
+<td style="width:80px">21</td>
+<td style="width:80px">20</td>
+<td style="width:80px">19</td>
+<td style="width:80px">18</td>
+<td style="width:80px">17</td>
+<td style="width:80px">16</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td colspan="8" style="width:661px;background-color:#FF0000">1</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+</tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 2</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">15</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td style="width:80px;background-color:#FFFFFF">/&nbsp;/&nbsp;/&nbsp;/&nbsp;/&nbsp;/</td>
+<td colspan="7" style="width:578px;background-color:#FFA500">2</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">&nbsp;</td>
+<td style="width:80px">14</td>
+<td style="width:80px">13</td>
+<td style="width:80px">12</td>
+<td style="width:80px">11</td>
+<td style="width:80px">10</td>
+<td style="width:80px">9</td>
+<td style="width:80px">8</td>
+</tr>
+</table>
+<font style="font-size:9pt;font-family:Arial;font-weight:bold;color:black">Octet 3</font><br>
+<table>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">subindex</td>
+<td colspan="8" style="width:661px;background-color:#FFA500">2</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7</td>
+<td style="width:80px">6</td>
+<td style="width:80px">5</td>
+<td style="width:80px">4</td>
+<td style="width:80px">3</td>
+<td style="width:80px">2</td>
+<td style="width:80px">1</td>
+<td style="width:80px">0</td>
+</tr>
+</table>
+<h2>Variable "Correction value in Ohm" index=104 id=V_userResistance</h2>
+<font style="font-size:9pt;font-family:Arial;color:black">description: Assign the error value of the temperature probe here.<br>
+data type: 8-bit Integer<br>
+allowed values: -100..100<br>
+default value: <span style="white-space:pre">0</span><br>
+access rights: rw<br>
+</font>
+<br><table>
+<tr style="text-align:center"><td style="width:80px">octet</td>
+<td style="width:80px">0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">bit offset</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+<tr style="text-align:center"><td style="width:80px">element bit</td>
+<td style="width:80px">7 - 0</td>
+<td colspan="7" style="width:578px">&nbsp;</td>
+</tr>
+</table>
+<br><div class="link"><a name="#ErrorTypes"></a><a href="#Top">[Top]</a></div>
+<h2>ErrorTypes</h2>
+<table width="750">
+<tr><th>Code</th><th>Additional code</th><th>Name</th><th>Description</th></tr>
+<tr><td>128 (0x80)</td><td>0 (0x00)</td><td>Device application error - no details</td><td>Service has been refused by the device application and no detailed information of the incident is available</td></tr>
+<tr><td>128 (0x80)</td><td>17 (0x11)</td><td>Index not available</td><td>Access occurs to a not existing index</td></tr>
+<tr><td>128 (0x80)</td><td>18 (0x12)</td><td>Subindex not available</td><td>Access occurs to a not existing subindex</td></tr>
+<tr><td>128 (0x80)</td><td>35 (0x23)</td><td>Access denied</td><td>Write access on a read-only parameter</td></tr>
+<tr><td>128 (0x80)</td><td>48 (0x30)</td><td>Parameter value out of range</td><td>Written parameter value is outside its permitted value range</td></tr>
+<tr><td>128 (0x80)</td><td>51 (0x33)</td><td>Parameter length overrun</td><td>Written parameter length is above its predefined length</td></tr>
+<tr><td>128 (0x80)</td><td>52 (0x34)</td><td>Parameter length underrun</td><td>Written parameter length is below its predefined length</td></tr>
+<tr><td>128 (0x80)</td><td>53 (0x35)</td><td>Function not available</td><td>Written command is not supported by the device application</td></tr>
+<tr><td>128 (0x80)</td><td>54 (0x36)</td><td>Function temporarily unavailable</td><td>Written command is not available due to the current state of the device application</td></tr>
+<tr><td>128 (0x80)</td><td>64 (0x40)</td><td>Invalid parameter set</td><td>Written single parameter collides with other actual parameter settings</td></tr>
+<tr><td>128 (0x80)</td><td>65 (0x41)</td><td>Inconsistent parameter set</td><td>Parameter inconsistencies were found at the end of block parameter transfer, device plausibility check failed</td></tr>
+</table>
+<br><div class="link"><a name="#Events"></a><a href="#Top">[Top]</a></div>
+<h2>Events</h2>
+<table width="750">
+<tr><th>Code</th><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>35872 (0x8c20)</td><td>Error</td><td>Measurement range over-run</td><td>Check application</td></tr>
+<tr><td>36008 (0x8ca8)</td><td>Error</td><td>Temperature probe connection</td><td>This Event is active when the temperature probe is not connected properly. Please check the connection.</td></tr>
+</table>
+<br><div class="link"><a name="#Menus"></a><a href="#Top">[Top]</a></div>
+<h2>Observer Menus</h2>
+<table width="750"><tr><th>Identification Menu</th></tr>
+<tr><th>Identification</th></tr>
+<tr><td><table>
+<tr><th>Identification</th></tr>
+<tr><td>V_VendorName</td></tr>
+<tr><td>V_VendorText</td></tr>
+<tr><td>V_ProductName</td></tr>
+<tr><td>V_ProductID</td></tr>
+<tr><td>V_ProductText</td></tr>
+<tr><td>V_SerialNumber</td></tr>
+<tr><td>V_FirmwareRevision</td></tr>
+<tr><td>V_ApplicationSpecificTag, ro</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Parameter Menu</th></tr>
+<tr><th>Parameters</th></tr>
+<tr><td><table>
+<tr><th>General settings</th></tr>
+<tr><td>V_DeviceAccessLocks, ro</td></tr>
+<tr><td>V_unit, ro</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, ro</td></tr>
+<tr><td>V_errorSwitch, ro</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.03110645 + -289.6325 °C, ro Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.03110645 + -289.6325 °C, ro Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, ro</td></tr>
+<tr><td>V_BDC_config.Function, ro</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, ro</td></tr>
+<tr><td>V_errorSwitch, ro</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.05599161 + -489.3385 °F, ro Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.05599161 + -489.3385 °F, ro Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, ro</td></tr>
+<tr><td>V_BDC_config.Function, ro</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, ro</td></tr>
+<tr><td>V_errorSwitch, ro</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.03110645 + -16.48251 K, ro Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.03110645 + -16.48251 K, ro Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, ro</td></tr>
+<tr><td>V_BDC_config.Function, ro</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, ro</td></tr>
+<tr><td>V_errorAnalog, ro</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.03110645 + -289.6325 °C, ro Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.03110645 + -289.6325 °C, ro Dec.1</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, ro</td></tr>
+<tr><td>V_errorAnalog, ro</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.05599161 + -489.3385 °F, ro Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.05599161 + -489.3385 °F, ro Dec.1</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, ro</td></tr>
+<tr><td>V_errorAnalog, ro</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.03110645 + -16.48251 K, ro Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.03110645 + -16.48251 K, ro Dec.1</td></tr>
+</table></td></tr>
+<tr><td><table>
+<tr><th>User Resistance Calibration</th></tr>
+<tr><td>V_userResistance * 0.01 + 100, ro Dec.2</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Observation Menu</th></tr>
+<tr><th>Monitoring</th></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.03110645 + -289.6325 °C, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.05599161 + -489.3385 °F, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.03110645 + -16.48251 K, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Diagnosis Menu</th></tr>
+<tr><th>Diagnostics</th></tr>
+<tr><td><table>
+<tr><th>Device Status</th></tr>
+<tr><td>V_DetailedDeviceStatus, ro</td></tr>
+<tr><td>V_DeviceStatus, ro</td></tr>
+</table></td></tr>
+</table>
+<h2>Maintenance Menus</h2>
+<table width="750"><tr><th>Identification Menu</th></tr>
+<tr><th>Identification</th></tr>
+<tr><td><table>
+<tr><th>Identification</th></tr>
+<tr><td>V_VendorName</td></tr>
+<tr><td>V_VendorText</td></tr>
+<tr><td>V_ProductName</td></tr>
+<tr><td>V_ProductID</td></tr>
+<tr><td>V_ProductText</td></tr>
+<tr><td>V_SerialNumber</td></tr>
+<tr><td>V_FirmwareRevision</td></tr>
+<tr><td>V_ApplicationSpecificTag, rw</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Parameter Menu</th></tr>
+<tr><th>Parameters</th></tr>
+<tr><td><table>
+<tr><th>General settings</th></tr>
+<tr><td>V_DeviceAccessLocks, rw</td></tr>
+<tr><td>V_unit, rw</td></tr>
+<tr><td>V_SystemCommand, Button:=128</td></tr>
+<tr><td>V_SystemCommand, Button:=130</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, rw</td></tr>
+<tr><td>V_errorSwitch, rw</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.03110645 + -289.6325 °C, rw Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.03110645 + -289.6325 °C, rw Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, rw</td></tr>
+<tr><td>V_BDC_config.Function, rw</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, rw</td></tr>
+<tr><td>V_errorSwitch, rw</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.05599161 + -489.3385 °F, rw Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.05599161 + -489.3385 °F, rw Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, rw</td></tr>
+<tr><td>V_BDC_config.Function, rw</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, rw</td></tr>
+<tr><td>V_errorSwitch, rw</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.03110645 + -16.48251 K, rw Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.03110645 + -16.48251 K, rw Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, rw</td></tr>
+<tr><td>V_BDC_config.Function, rw</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, rw</td></tr>
+<tr><td>V_errorAnalog, rw</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.03110645 + -289.6325 °C, rw Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.03110645 + -289.6325 °C, rw Dec.1</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, rw</td></tr>
+<tr><td>V_errorAnalog, rw</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.05599161 + -489.3385 °F, rw Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.05599161 + -489.3385 °F, rw Dec.1</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, rw</td></tr>
+<tr><td>V_errorAnalog, rw</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.03110645 + -16.48251 K, rw Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.03110645 + -16.48251 K, rw Dec.1</td></tr>
+</table></td></tr>
+<tr><td><table>
+<tr><th>User Resistance Calibration</th></tr>
+<tr><td>V_userResistance * 0.01 + 100, rw Dec.2</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Observation Menu</th></tr>
+<tr><th>Monitoring</th></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.03110645 + -289.6325 °C, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.05599161 + -489.3385 °F, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.03110645 + -16.48251 K, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Diagnosis Menu</th></tr>
+<tr><th>Diagnostics</th></tr>
+<tr><td><table>
+<tr><th>Device Status</th></tr>
+<tr><td>V_DetailedDeviceStatus, ro</td></tr>
+<tr><td>V_DeviceStatus, ro</td></tr>
+</table></td></tr>
+</table>
+<h2>Specialist Menus</h2>
+<table width="750"><tr><th>Identification Menu</th></tr>
+<tr><th>Identification</th></tr>
+<tr><td><table>
+<tr><th>Identification</th></tr>
+<tr><td>V_VendorName</td></tr>
+<tr><td>V_VendorText</td></tr>
+<tr><td>V_ProductName</td></tr>
+<tr><td>V_ProductID</td></tr>
+<tr><td>V_ProductText</td></tr>
+<tr><td>V_SerialNumber</td></tr>
+<tr><td>V_FirmwareRevision</td></tr>
+<tr><td>V_ApplicationSpecificTag, rw</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Parameter Menu</th></tr>
+<tr><th>Parameters</th></tr>
+<tr><td><table>
+<tr><th>General settings</th></tr>
+<tr><td>V_DeviceAccessLocks, rw</td></tr>
+<tr><td>V_unit, rw</td></tr>
+<tr><td>V_SystemCommand, Button:=128</td></tr>
+<tr><td>V_SystemCommand, Button:=130</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, rw</td></tr>
+<tr><td>V_errorSwitch, rw</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.03110645 + -289.6325 °C, rw Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.03110645 + -289.6325 °C, rw Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, rw</td></tr>
+<tr><td>V_BDC_config.Function, rw</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, rw</td></tr>
+<tr><td>V_errorSwitch, rw</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.05599161 + -489.3385 °F, rw Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.05599161 + -489.3385 °F, rw Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, rw</td></tr>
+<tr><td>V_BDC_config.Function, rw</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Switching output settings</th></tr>
+<tr><td>V_pn, rw</td></tr>
+<tr><td>V_errorSwitch, rw</td></tr>
+<tr><td>V_BDC.Switchpoint/ upper limit value * 0.03110645 + -16.48251 K, rw Dec.1</td></tr>
+<tr><td>V_BDC.Release point/ lower limit value * 0.03110645 + -16.48251 K, rw Dec.1</td></tr>
+<tr><td>V_BDC_config.Logic, rw</td></tr>
+<tr><td>V_BDC_config.Function, rw</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, rw</td></tr>
+<tr><td>V_errorAnalog, rw</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.03110645 + -289.6325 °C, rw Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.03110645 + -289.6325 °C, rw Dec.1</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, rw</td></tr>
+<tr><td>V_errorAnalog, rw</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.05599161 + -489.3385 °F, rw Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.05599161 + -489.3385 °F, rw Dec.1</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Analog output settings</th></tr>
+<tr><td>V_analogOutputMode, rw</td></tr>
+<tr><td>V_errorAnalog, rw</td></tr>
+<tr><td>V_analogRange.Start point of the analog signal * 0.03110645 + -16.48251 K, rw Dec.1</td></tr>
+<tr><td>V_analogRange.End point of th analog signal * 0.03110645 + -16.48251 K, rw Dec.1</td></tr>
+</table></td></tr>
+<tr><td><table>
+<tr><th>User Resistance Calibration</th></tr>
+<tr><td>V_userResistance * 0.01 + 100, rw Dec.2</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Observation Menu</th></tr>
+<tr><th>Monitoring</th></tr>
+<tr><td><i>If V_unit = 0:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.03110645 + -289.6325 °C, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 1:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.05599161 + -489.3385 °F, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+<tr><td><i>If V_unit = 2:</i>
+<table>
+<tr><th>Current output settings</th></tr>
+<tr><td>V_ProcessDataInput.1 * 0.03110645 + -16.48251 K, ro Dec.1</td></tr>
+<tr><td>V_ProcessDataInput.2, ro Bin</td></tr>
+</table></td></tr>
+</table>
+<br><table width="750"><tr><th>Diagnosis Menu</th></tr>
+<tr><th>Diagnostics</th></tr>
+<tr><td><table>
+<tr><th>Device Status</th></tr>
+<tr><td>V_DetailedDeviceStatus, ro</td></tr>
+<tr><td>V_DeviceStatus, ro</td></tr>
+</table></td></tr>
+</table>
+<p>Note: This page shows the content of an IODD file transformed into HTML format. In the case of disparity between this and the XML view, the content of the XML file takes precedence.<br>Created by IODD Viewer V1.1.</p>
+</body>

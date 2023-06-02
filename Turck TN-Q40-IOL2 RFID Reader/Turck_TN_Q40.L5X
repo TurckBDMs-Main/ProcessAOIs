@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="23.00" TargetName="Turck_TN_Q40" TargetType="AddOnInstructionDefinition" TargetRevision="1.0 " TargetLastEdited="2021-12-03T16:53:52.275Z" ContainsContext="true" Owner="TURCK, TURCK" ExportDate="Fri Dec 03 13:42:48 2021" ExportOptions="References DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="IOL_Sample">
+<DataTypes Use="Context">
+<DataType Name="Generic_16_Words" Family="NoFamily" Class="User">
+<Members>
+<Member Name="Data" DataType="INT" Dimension="16" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"/>
+</Members>
+</DataType>
+<DataType Name="Generic_28_Bytes" Family="NoFamily" Class="User">
+<Members>
+<Member Name="Data" DataType="SINT" Dimension="28" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"/>
+</Members>
+</DataType>
+</DataTypes>
+<AddOnInstructionDefinitions Use="Context">
+<AddOnInstructionDefinition Use="Target" Name="Turck_TN_Q40" Revision="1.0" ExecutePrescan="false" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2020-09-30T06:53:42.498Z" CreatedBy="NIDLAB01\Turck User" EditedDate="2021-12-03T16:53:52.275Z" EditedBy="NIDLAB01\Turck User" SoftwareRevision="v23.00"
+>
+<Parameters>
+<Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Input - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Output - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="Process_Data_In" TagType="Base" DataType="Generic_16_Words" Usage="InOut" Required="true" Visible="true" Constant="false"/>
+<Parameter Name="Process_Data_Out" TagType="Base" DataType="Generic_16_Words" Usage="InOut" Required="true" Visible="true" Constant="false"/>
+<Parameter Name="Ready_Flag" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[1 -> 0 or 0 -> 1: Command executed, new data available
+0 or 1: No new data available]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Error" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[0: Command executed error-free
+1: Command executed with error]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Tag" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[0: No tag within the detection range
+1: Tag present at read/write head]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Antenna_State" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[0: RF field switched off
+1: RF field switched on]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="CMDCPY" TagType="Base" DataType="SINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Command Code Echo]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="SINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Error_Code" TagType="Base" DataType="SINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Error Code
+(Check Manual)]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="SINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="ALR2" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[0: Alarm 2 off
+1: Alarm 2 on]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="ALR1" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[0: Alarm 1 off
+1: Alarm 1 on]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Address" TagType="Base" DataType="SINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Address of the first memory block on the tag on which a command was executed]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="SINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="RSSI" TagType="Base" DataType="SINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Signal Strength]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="SINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Read_Data" TagType="Base" DataType="Generic_28_Bytes" Usage="InOut" Required="true" Visible="true" Constant="false">
+<Description>
+<![CDATA[Data read from Tag]]>
+</Description>
+</Parameter>
+<Parameter Name="Start" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[1 -> 0 or 0 -> 1: Execute command. The START bit switches status automatically with the
+automatic read and automatic write commands.
+0 or 1: Idle]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="N_Ant" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[0: Switch on RF field
+1: Switch off RF field]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="CMD" TagType="Base" DataType="SINT" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[0: No command
+1: Automatic read
+2: Automatic write
+3: Read
+4: Write
+5: Display UID and time stamp]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="SINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="NB_Block" TagType="Base" DataType="SINT" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Number of memory blocks to be read or written
+n EEPROM: max. 7 memory blocks
+n FRAM: max. 3 memory blocks]]>
+</Description>
+<DefaultData>00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="SINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Start_Address" TagType="Base" DataType="INT" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Address of the first memory block on the tag on which a command is to be executed]]>
+</Description>
+<DefaultData>00 00</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="INT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Write_Data" TagType="Base" DataType="Generic_28_Bytes" Usage="InOut" Required="true" Visible="true" Constant="false">
+<Description>
+<![CDATA[Data to write to Tag]]>
+</Description>
+</Parameter>
+</Parameters>
+<LocalTags/>
+<Routines>
+<Routine Name="Logic" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[MOV(0,Process_Data_Out.Data[0])MOV(0,Process_Data_Out.Data[1]);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[CPS(Write_Data.Data[0],Process_Data_Out.Data[2],14);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Text>
+<![CDATA[SWPB(Process_Data_Out.Data[2],WORD,Process_Data_Out.Data[2])SWPB(Process_Data_Out.Data[3],WORD,Process_Data_Out.Data[3])SWPB(Process_Data_Out.Data[4],WORD,Process_Data_Out.Data[4])SWPB(Process_Data_Out.Data[5],WORD,Process_Data_Out.Data[5])SWPB(Process_Data_Out.Data[6],WORD,Process_Data_Out.Data[6])SWPB(Process_Data_Out.Data[7],WORD,Process_Data_Out.Data[7])SWPB(Process_Data_Out.Data[8],WORD,Process_Data_Out.Data[8])SWPB(Process_Data_Out.Data[9],WORD,Process_Data_Out.Data[9])SWPB(Process_Data_Out.Data[10],WORD,Process_Data_Out.Data[10])SWPB(Process_Data_Out.Data[11],WORD,Process_Data_Out.Data[11])SWPB(Process_Data_Out.Data[12],WORD,Process_Data_Out.Data[12])SWPB(Process_Data_Out.Data[13],WORD,Process_Data_Out.Data[13])SWPB(Process_Data_Out.Data[14],WORD,Process_Data_Out.Data[14])SWPB(Process_Data_Out.Data[15],WORD,Process_Data_Out.Data[15]);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Text>
+<![CDATA[BTD(Start_Address,0,Process_Data_Out.Data[1],0,8);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Text>
+<![CDATA[BTD(NB_Block,0,Process_Data_Out.Data[0],0,3);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Text>
+<![CDATA[BTD(CMD,0,Process_Data_Out.Data[0],8,4);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Text>
+<![CDATA[XIC(N_Ant)OTE(Process_Data_Out.Data[0].12);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Text>
+<![CDATA[XIC(Start)OTE(Process_Data_Out.Data[0].15);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Text>
+<![CDATA[SWPB(Process_Data_In.Data[2],WORD,Process_Data_In.Data[2])SWPB(Process_Data_In.Data[3],WORD,Process_Data_In.Data[3])SWPB(Process_Data_In.Data[4],WORD,Process_Data_In.Data[4])SWPB(Process_Data_In.Data[5],WORD,Process_Data_In.Data[5])SWPB(Process_Data_In.Data[6],WORD,Process_Data_In.Data[6])SWPB(Process_Data_In.Data[7],WORD,Process_Data_In.Data[7])SWPB(Process_Data_In.Data[8],WORD,Process_Data_In.Data[8])SWPB(Process_Data_In.Data[9],WORD,Process_Data_In.Data[9])SWPB(Process_Data_In.Data[10],WORD,Process_Data_In.Data[10])SWPB(Process_Data_In.Data[11],WORD,Process_Data_In.Data[11])SWPB(Process_Data_In.Data[12],WORD,Process_Data_In.Data[12])SWPB(Process_Data_In.Data[13],WORD,Process_Data_In.Data[13])SWPB(Process_Data_In.Data[14],WORD,Process_Data_In.Data[14])SWPB(Process_Data_In.Data[15],WORD,Process_Data_In.Data[15]);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Text>
+<![CDATA[CPS(Process_Data_In.Data[2],Read_Data.Data[0],28);]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Text>
+<![CDATA[BTD(Process_Data_In.Data[1],0,Address,0,8);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Text>
+<![CDATA[BTD(Process_Data_In.Data[1],8,RSSI,0,8);]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Text>
+<![CDATA[XIC(Process_Data_In.Data[0].0)OTE(ALR1);]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Text>
+<![CDATA[XIC(Process_Data_In.Data[0].1)OTE(ALR2);]]>
+</Text>
+</Rung>
+<Rung Number="15" Type="N">
+<Text>
+<![CDATA[BTD(Process_Data_In.Data[0],2,Error_Code,0,6);]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Text>
+<![CDATA[BTD(Process_Data_In.Data[0],8,CMDCPY,0,4);]]>
+</Text>
+</Rung>
+<Rung Number="17" Type="N">
+<Text>
+<![CDATA[XIC(Process_Data_In.Data[0].12)OTE(Antenna_State);]]>
+</Text>
+</Rung>
+<Rung Number="18" Type="N">
+<Text>
+<![CDATA[XIC(Process_Data_In.Data[0].13)OTE(Tag);]]>
+</Text>
+</Rung>
+<Rung Number="19" Type="N">
+<Text>
+<![CDATA[XIC(Process_Data_In.Data[0].14)OTE(Error);]]>
+</Text>
+</Rung>
+<Rung Number="20" Type="N">
+<Text>
+<![CDATA[XIC(Process_Data_In.Data[0].15)OTE(Ready_Flag);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+<Dependencies>
+<Dependency Type="DataType" Name="Generic_16_Words"/>
+<Dependency Type="DataType" Name="Generic_28_Bytes"/>
+</Dependencies>
+</AddOnInstructionDefinition>
+</AddOnInstructionDefinitions>
+</Controller>
+</RSLogix5000Content>
